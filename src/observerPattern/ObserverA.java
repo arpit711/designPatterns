@@ -1,8 +1,14 @@
+package observerPattern;
+
+import observerPattern.Subject;
+
 public class ObserverA extends Observer{
+
+    private final Subject subject;
 
     public ObserverA(Subject subject) {
         this.subject = subject;
-        this.subject.attach(this);
+        this.subject.attach((Observer) this);
 
     }
 

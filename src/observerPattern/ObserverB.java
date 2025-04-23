@@ -1,3 +1,5 @@
+package observerPattern;
+
 public class ObserverB extends Observer{
     public ObserverB(Subject subject){
         this.subject = subject;
